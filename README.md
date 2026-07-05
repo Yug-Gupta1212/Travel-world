@@ -82,7 +82,7 @@ https://nodejs.org
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/TravelWorld.git
+[git clone https://github.com/Yug-Gupta1212/Travel-world.git]
 ```
 
 ### Step 2
