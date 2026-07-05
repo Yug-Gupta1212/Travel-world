@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelWorld</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h1>🌍 TravelWorld</h1>
+
+        <p>Your AI Travel Assistant</p>
+
+        <button onclick="newChat()">
+            + New Chat
+        </button>
+
+        <button onclick="openSettings()">
+            ⚙️ Gemini API Key
+        </button>
+
+        <h3>Suggestions</h3>
+
+        <div class="tip" onclick="fillPrompt('Plan a 5 day trip to Goa')">
+            Plan a 5 day trip to Goa
+        </div>
+
+        <div class="tip" onclick="fillPrompt('Best places to visit in Himachal')">
+            Best places in Himachal
+        </div>
+
+        <div class="tip" onclick="fillPrompt('Budget trip under ₹20000')">
+            Budget Trip
+        </div>
+
+        <div class="tip" onclick="fillPrompt('Best honeymoon destinations')">
+            Honeymoon
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+
+            <h2>TravelWorld ✈️</h2>
+
+            <p>Powered by your Gemini API Key</p>
+
+        </div>
+
+        <div id="chatBox">
+
+            <div class="message bot">
+👋 Hello!<br><br>
+Welcome to <b>TravelWorld</b>.<br><br>
+Before chatting, click <b>⚙️ Gemini API Key</b> and paste your Gemini API key.<br><br>
+After that, ask me anything related to travel.
+</div>
+
+        </div>
+
+        <div class="inputArea">
+
+            <input
+                id="prompt"
+                type="text"
+                placeholder="Ask anything about travelling..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Settings Modal -->
+
+<div id="settings" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Gemini API Key</h2>
+
+        <p>
+
+            Get your free API Key from
+
+            <br>
+
+            https://aistudio.google.com/app/apikey
+
+        </p>
+
+        <input
+            id="apiKey"
+            type="password"
+            placeholder="Paste your Gemini API Key"
+        >
+
+        <button onclick="saveApiKey()">
+
+            Save
+
+        </button>
+
+        <button onclick="closeSettings()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
